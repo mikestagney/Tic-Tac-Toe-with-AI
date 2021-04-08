@@ -55,7 +55,7 @@ public class HardComputerMove implements StrategyMove{
 
             newBoard[availCellsIndexes[i]] = index;
             moves.put(index, result);
-        } a
+        }
         Integer bestMove = null;
         if (pieceValue == PLAYER_PIECE) {
             int highestScore = Integer.MIN_VALUE;
