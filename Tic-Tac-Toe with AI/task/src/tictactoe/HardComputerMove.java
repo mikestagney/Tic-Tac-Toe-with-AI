@@ -18,7 +18,7 @@ public class HardComputerMove implements StrategyMove{
 
         int[] board = createBoardArray(gameboard, piece);
 
-        int bestMove = miniMaxFunction(board, PLAYER_PIECE);
+        int bestMove = miniMaxFunction(board, OPPONENT_PIECE); // switch from player_piece to opponent_piece
         //System.out.println("The final best move is " + bestMove);
         int row = bestMove / 3;
         int col = bestMove % 3;
@@ -40,23 +40,30 @@ public class HardComputerMove implements StrategyMove{
 
 
         // iterate through the map
+        //int result = pieceValue == PLAYER_PIECE ? Integer.MAX_VALUE : Integer.MIN_VALUE;
         for (int i = 0; i < availCellsIndexes.length; i++) {
-            int result;
+            int result;// = pieceValue == PLAYER_PIECE ? Integer.MAX_VALUE : Integer.MIN_VALUE;
             // create object to store moves?
+            int[] holdMove = new int[2];
             int index = newBoard[availCellsIndexes[i]];
-
+            holdMove[0] = index;
             newBoard[availCellsIndexes[i]] = pieceValue;
 
             if (pieceValue == PLAYER_PIECE) {
                 result = miniMaxFunction(newBoard, OPPONENT_PIECE);
+                //holdMove[1] = result;
             } else {
                 result = miniMaxFunction(newBoard, PLAYER_PIECE);
+                //holdMove[1] = result;
             }
-
+            holdMove[1] = result;
             newBoard[availCellsIndexes[i]] = index;
-            moves.put(index, result);
+            moves.put(holdMove[0], holdMove[1]);
         }
-        Integer bestMove = null;
+        for (var entry : moves.entrySet()) {
+            //System.out.println("index " + entry.getKey() + " value " + entry.getValue());
+        }
+        int bestMove = 0;
         if (pieceValue == PLAYER_PIECE) {
             int highestScore = Integer.MIN_VALUE;
             for (var move : moves.entrySet()) {
@@ -69,14 +76,14 @@ public class HardComputerMove implements StrategyMove{
         } else {
             int lowestScore = Integer.MAX_VALUE;
             for (var move : moves.entrySet()) {
-                System.out.println("move " + move.getKey() + " value " + move.getValue());
+                //System.out.println("move " + move.getKey() + " value " + move.getValue());
                 if (move.getValue() < lowestScore) {
                     lowestScore = move.getValue();
                     bestMove = move.getKey();
                     //System.out.printf("Lowest score %d with index %d%n", lowestScore, bestMove);
                 }
             }
-            System.out.println("end of map");
+            //System.out.println("end of map");
         }
         //System.out.println("best move is " + bestMove);
         return bestMove;
@@ -110,7 +117,7 @@ public class HardComputerMove implements StrategyMove{
         }
         for (int i = 0; i < 3; i++) {
             if (board[i] + board[i + 3] + board[i + 6] == winningTotal) return true;
-        }
+            }
         return board[0] + board[4] + board[8] == winningTotal ||
                 (board[6] + board[4] + board[2] == winningTotal);
     }
