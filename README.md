@@ -8,11 +8,16 @@ Used regex to validate user input.
 
 Strategy and Factory design patterns used
 
-Planning and organizing complex
+Planning and organizing complex application (uses 12 java class files)
+
+### Details
 
 Project created for JetBrains Academy Java Developer course - medium level project
 
 Almost complete, hard AI using minimax algorithm is not working correctly
+
+### How to play
+
 
 
 The top-left cell will have the coordinates (1, 1) and the bottom-right cell will have the coordinates (3, 3), as shown in this table:
