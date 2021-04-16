@@ -18,9 +18,9 @@ Almost complete, hard AI using minimax algorithm is not working correctly.
 
 ### How to play
 
-To start the game, use the **start** command. It takes two parameters: who wil play X and who will play O. For human players, **user** to play and **easy**, **medium** or **hard** to play as an AI.  Any combination of parameters will work. First parameters plays X and second plays O.
+To start the game, use the **start** command. It takes two parameters: who wil play X and who will play O. For human players, **user** to play and **easy**, **medium** or **hard** to play as an AI.  Any combination of these parameters will work. First parameters plays X and second plays O.
 
-The top-left cell will have the coordinates (1, 1) and the bottom-right cell will have the coordinates (3, 3), as shown in this table:
+One the game starts, select you cell by keying two numbers. The top-left cell will have the coordinates (1, 1) and the bottom-right cell will have the coordinates (3, 3), as shown in this table:
 
 |        |        |        |
 |:------:|:------:|:------:|
