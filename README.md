@@ -1,4 +1,4 @@
-# Tic-Tac-Toe-with-AI
+# Tic-Tac-Toe-with-AI.  Written in **Java.**
 
 Command line Tic Tac Toe game for 0, 1 or 2 human players with 3 levels of AI.
 
