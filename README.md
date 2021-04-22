@@ -16,6 +16,8 @@ Project created for JetBrains Academy Java Developer course - medium level proje
 
 Almost complete, hard AI using minimax algorithm is not working correctly.
 
+Easy AI selects a random open cell.  Medium AI selects a random cell unless there is a cell that will either win for the computer or block the opponent from winning.
+
 ### How to play
 
 To start the game, use the **start** command. It takes two parameters: who wil play X and who will play O. For human players, **user** to play and **easy**, **medium** or **hard** to play as an AI.  Any combination of these parameters will work. First parameters plays X and second plays O.
