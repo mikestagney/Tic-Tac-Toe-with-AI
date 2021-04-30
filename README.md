@@ -18,6 +18,20 @@ Almost complete, hard AI using minimax algorithm is not working correctly.
 
 Easy AI selects a random open cell.  Medium AI selects a random cell unless there is a cell that will either win for the computer or block the opponent from winning.
 
+#### The directory contains 12 files: 
+
+* ComputerPlayer.java - class for computer player objects
+* EasyComputerMove.java - the algorithm for easy computer AI
+* GameBoard.java - maintains the game board, processes moves, checks for win, draw and free cells
+* HardComputerMove.java - the algorithm for hard computer AI
+* HumanMove.java - the algorithm that handles human player movement
+* HumanPlayer.java - class for human player objects
+* MediumComputerMove.java - the algorithm	for medium computer AI
+* Move.java - class that encapsulates data needed for a player's move
+* Player.java - abstract class, parent of HumanPlayer and ComputerPlayer classes
+* PlayerFactory.java - class uses factory pattern to build player objects and the strategy pattern to assign the appropriate algorithm to them 
+* StrategyMove.java - interface for all computer and human algorithms
+
 ### How to play
 
 To start the game, use the **start** command. It takes two parameters: who wil play X and who will play O. For human players, **user** to play and **easy**, **medium** or **hard** to play as an AI.  Any combination of these parameters will work. First parameter plays X and second plays O.
