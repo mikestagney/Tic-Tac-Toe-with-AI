@@ -20,17 +20,18 @@ Easy AI selects a random open cell.  Medium AI selects a random cell unless ther
 
 #### The directory contains 12 files: 
 
-* ComputerPlayer.java - class for computer player objects
-* EasyComputerMove.java - the algorithm for easy computer AI
+* Main.java - sets up game and runs the game loop
 * GameBoard.java - maintains the game board, processes moves, checks for win, draw and free cells
-* HardComputerMove.java - the algorithm for hard computer AI
-* HumanMove.java - the algorithm that handles human player movement
-* HumanPlayer.java - class for human player objects
-* MediumComputerMove.java - the algorithm	for medium computer AI
 * Move.java - class that encapsulates data needed for a player's move
 * Player.java - abstract class, parent of HumanPlayer and ComputerPlayer classes
+* ComputerPlayer.java - class for computer player objects
+* HumanPlayer.java - class for human player objects
 * PlayerFactory.java - class uses factory pattern to build player objects and the strategy pattern to assign the appropriate algorithm to them 
 * StrategyMove.java - interface for all computer and human algorithms
+* EasyComputerMove.java - the algorithm for easy computer AI
+* MediumComputerMove.java - the algorithm	for medium computer AI
+* HardComputerMove.java - the algorithm for hard computer AI
+* HumanMove.java - the algorithm that handles human player movement
 
 ### How to play
 
