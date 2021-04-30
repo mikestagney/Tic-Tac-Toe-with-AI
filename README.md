@@ -20,7 +20,7 @@ Easy AI selects a random open cell.  Medium AI selects a random cell unless ther
 
 ### How to play
 
-To start the game, use the **start** command. It takes two parameters: who wil play X and who will play O. For human players, **user** to play and **easy**, **medium** or **hard** to play as an AI.  Any combination of these parameters will work. First parameters plays X and second plays O.
+To start the game, use the **start** command. It takes two parameters: who wil play X and who will play O. For human players, **user** to play and **easy**, **medium** or **hard** to play as an AI.  Any combination of these parameters will work. First parameter plays X and second plays O.
 
 One the game starts, select cell by keying two numbers. The top-left cell will have the coordinates (1, 1) and the bottom-right cell will have the coordinates (3, 3), as shown in this table:
 
@@ -29,3 +29,53 @@ One the game starts, select cell by keying two numbers. The top-left cell will h
 | (1, 1) | (1, 2) | (1, 3) |
 | (2, 1) | (2, 2) | (2, 3) |
 | (3, 1) | (3, 2) | (3, 3) |
+
+### Sample input and output:
+
+Input command:  start hard user
+
+Making move level "hard"\
+--------\
+| &emsp; &emsp; &emsp; |\
+| X &emsp; &emsp;         |\
+| &emsp; &emsp; &emsp; |\
+---------\
+Enter the coordinates: > 2 2\
+---------\
+| &emsp; &emsp; &emsp;|\
+| X O &emsp;              |\
+| &emsp; &emsp; &emsp;|\
+---------\
+Making move level "hard"\
+---------\
+| &emsp;  X &emsp;|\
+| X O &emsp;  |\
+| &emsp; &emsp; &emsp;|\
+---------\
+Enter the coordinates: > 3 2\
+---------\
+| &emsp; X &emsp;  |\
+| X O &emsp;          |\
+| &emsp; O &emsp;  |\
+---------\
+Making move level "hard"\
+---------\
+| X X &emsp;  |\
+| X O &emsp;  |\
+| &emsp;  O &emsp;|\
+---------\
+Enter the coordinates: > 3 1\
+---------\
+| X X &emsp;  |\
+| X O &emsp;  |\
+| O O &emsp;  |\
+---------\
+Making move level "hard"\
+---------\
+| X X X |\
+| X O &emsp;|\
+| O O &emsp;|\
+---------\
+X wins
+
+Input command: > exit
