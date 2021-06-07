@@ -27,11 +27,11 @@ Easy AI selects a random open cell.  Medium AI selects a random cell unless ther
 * ComputerPlayer.java - class for computer player objects
 * HumanPlayer.java - class for human player objects
 * PlayerFactory.java - class uses factory pattern to build player objects and the strategy pattern to assign the appropriate algorithm to them 
-* StrategyMove.java - interface for all computer and human algorithms
-* EasyComputerMove.java - the algorithm for easy computer AI
-* MediumComputerMove.java - the algorithm	for medium computer AI
-* HardComputerMove.java - the algorithm for hard computer AI
-* HumanMove.java - the algorithm that handles human player movement
+* StrategyMove.java - interface for all computer and human move algorithms
+* EasyComputerMove.java - the class with the algorithm for easy computer AI
+* MediumComputerMove.java - the class with the algorithm for medium computer AI
+* HardComputerMove.java - the class with the algorithm for hard computer AI
+* HumanMove.java - the class that handles human player movement
 
 ### How to play
 
