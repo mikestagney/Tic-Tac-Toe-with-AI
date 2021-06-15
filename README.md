@@ -35,7 +35,7 @@ Easy AI selects a random open cell.  Medium AI selects a random cell unless ther
 
 ### How to play
 
-To start the game, use the **start** command. It takes two parameters: who wil play X and who will play O. For human players, **user** to play and **easy**, **medium** or **hard** to play as an AI.  Any combination of these parameters will work. First parameter plays X and second plays O.
+To start the game, use the **start** command. It takes two parameters: who will play X and who will play O. For human players, **user** to play and **easy**, **medium** or **hard** to play as an AI.  Any combination of these parameters will work. First parameter plays X and second plays O.
 
 One the game starts, select cell by keying two numbers. The top-left cell will have the coordinates (1, 1) and the bottom-right cell will have the coordinates (3, 3), as shown in this table:
 
